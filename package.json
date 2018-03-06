@@ -1,0 +1,19 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "Super simple Twitter Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "author": "Mauro Bono",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "twit": "^2.2.9"
+  }
+}
