@@ -18,5 +18,5 @@ function postTweet() {
     }
 }
 
-postTweet(); // run it as soon as the program start
-setInterval(postTweet, 1000 * 60 * 60 * 24); //then once a day
+//postTweet(); // run it as soon as the program start
+//setInterval(postTweet, 1000 * 60 * 60 * 24); //then once a day
