@@ -2,6 +2,8 @@ const Twit = require('twit');
 const config = require('./config');
 const Bot = new Twit(config);
 const helper = require('./helpers');
+const schedule = require('node-schedule');
+
 
 function postTweet() {
     //1. create a tweet
@@ -18,5 +20,4 @@ function postTweet() {
     }
 }
 
-//postTweet(); // run it as soon as the program start
-//setInterval(postTweet, 1000 * 60 * 60 * 24); //then once a day
+const dailySchedule = schedule.scheduleJob('42 15 * * *', postTweet());
